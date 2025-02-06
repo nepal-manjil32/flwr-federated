@@ -1,0 +1,193 @@
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=10, no round_timeout
+[92mINFO [0m:
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      initial parameters (loss, other metrics): 2.3033434263052652, {'centralized_accuracy': 0.1125}
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[33m(raylet)[0m [2025-02-06 00:43:20,691 E 77082 1970037] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-02-06_00-43-09_789281_77067 is over 95% full, available space: 10.3653 GB; capacity: 228.274 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-02-06 00:43:30,748 E 77082 1970037] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-02-06_00-43-09_789281_77067 is over 95% full, available space: 10.3647 GB; capacity: 228.274 GB. Object creation will fail if spilling is required.
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.28541623732658905, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.6229861951606808, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.45027375150222637, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.22312901285288522, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.2948850761657552, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (1, 1.9505319168773323, {'centralized_accuracy': 0.3886}, 14.750352082992322)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.19408030464601167, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.4965504706011592, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7638263296662569, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.12812718536389456, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.21732289154468165, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (2, 0.5955784754059947, {'centralized_accuracy': 0.7709}, 20.105837916999008)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[33m(raylet)[0m [2025-02-06 00:43:40,776 E 77082 1970037] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-02-06_00-43-09_789281_77067 is over 95% full, available space: 10.3646 GB; capacity: 228.274 GB. Object creation will fail if spilling is required.
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.7531027191813818, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.9063574693245058, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.6673674616870452, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.12333853786116034, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7217440831241474, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (3, 2.3638842174420343, {'centralized_accuracy': 0.1}, 25.245120124993264)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.3478955662262905, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.18618871474517895, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.6400880433559538, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.8078729672801542, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.5155548781891813, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (4, 2.3387338543852296, {'centralized_accuracy': 0.1004}, 29.171445374988252)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[33m(raylet)[0m [2025-02-06 00:43:50,870 E 77082 1970037] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-02-06_00-43-09_789281_77067 is over 95% full, available space: 10.3619 GB; capacity: 228.274 GB. Object creation will fail if spilling is required.
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.7275296998965707, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.009909380489631636, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7513525104829685, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.9642020210012472, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.6039430188470264, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (5, 2.1196262406084103, {'centralized_accuracy': 0.1509}, 33.073223166997195)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.12636473034843998, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.07003565124827882, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.039126329975330165, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.09135871262181372, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.6111635846866318, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (6, 1.2869106470205534, {'centralized_accuracy': 0.4848}, 37.73161116699339)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.3198611467991451, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.710569031870071, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.9484069287889091, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7982951318784257, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.30052005478050414, "mylist": [1, 2, 3, 4]}
+[33m(raylet)[0m [2025-02-06 00:44:00,871 E 77082 1970037] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-02-06_00-43-09_789281_77067 is over 95% full, available space: 10.3601 GB; capacity: 228.274 GB. Object creation will fail if spilling is required.
+[92mINFO [0m:      fit progress: (7, 1.2250257835220606, {'centralized_accuracy': 0.5388}, 41.97185091699066)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.4954410547749345, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.14979993836079142, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.34828551492517945, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.5333828437949454, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.49065601128239267, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (8, 1.2958831941357816, {'centralized_accuracy': 0.4869}, 46.808081832990865)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.22891338021741414, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.8610893933559739, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.2928798226252317, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7088633436192104, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7546805989298895, "mylist": [1, 2, 3, 4]}
+[33m(raylet)[0m [2025-02-06 00:44:10,963 E 77082 1970037] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-02-06_00-43-09_789281_77067 is over 95% full, available space: 10.3689 GB; capacity: 228.274 GB. Object creation will fail if spilling is required.
+[92mINFO [0m:      fit progress: (9, 1.0987615973804705, {'centralized_accuracy': 0.6242}, 51.47472095799458)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.2556809891292722, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.6517421347506714, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.9830774988834516, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.8610020350516824, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7121010800148383, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (10, 1.0489709028801597, {'centralized_accuracy': 0.6195}, 56.14248837500054)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 10 round(s) in 57.08s
+[92mINFO [0m:      	History (loss, distributed):
+[92mINFO [0m:      		round 1: 1.9500856774060709
+[92mINFO [0m:      		round 2: 0.5893027945425212
+[92mINFO [0m:      		round 3: 2.354339452926267
+[92mINFO [0m:      		round 4: 2.334530296463953
+[92mINFO [0m:      		round 5: 2.116804301414708
+[92mINFO [0m:      		round 6: 1.280254478690944
+[92mINFO [0m:      		round 7: 1.2136914491818283
+[92mINFO [0m:      		round 8: 1.2802644794280056
+[92mINFO [0m:      		round 9: 1.0831485567103953
+[92mINFO [0m:      		round 10: 1.0464882427239037
+[92mINFO [0m:      	History (loss, centralized):
+[92mINFO [0m:      		round 0: 2.3033434263052652
+[92mINFO [0m:      		round 1: 1.9505319168773323
+[92mINFO [0m:      		round 2: 0.5955784754059947
+[92mINFO [0m:      		round 3: 2.3638842174420343
+[92mINFO [0m:      		round 4: 2.3387338543852296
+[92mINFO [0m:      		round 5: 2.1196262406084103
+[92mINFO [0m:      		round 6: 1.2869106470205534
+[92mINFO [0m:      		round 7: 1.2250257835220606
+[92mINFO [0m:      		round 8: 1.2958831941357816
+[92mINFO [0m:      		round 9: 1.0987615973804705
+[92mINFO [0m:      		round 10: 1.0489709028801597
+[92mINFO [0m:      	History (metrics, distributed, fit):
+[92mINFO [0m:      	{'max_b': [(1, 0.6229861951606808),
+[92mINFO [0m:      	           (2, 0.7638263296662569),
+[92mINFO [0m:      	           (3, 0.9063574693245058),
+[92mINFO [0m:      	           (4, 0.8078729672801542),
+[92mINFO [0m:      	           (5, 0.9642020210012472),
+[92mINFO [0m:      	           (6, 0.6111635846866318),
+[92mINFO [0m:      	           (7, 0.9484069287889091),
+[92mINFO [0m:      	           (8, 0.5333828437949454),
+[92mINFO [0m:      	           (9, 0.8610893933559739),
+[92mINFO [0m:      	           (10, 0.9830774988834516)]}
+[92mINFO [0m:      	History (metrics, distributed, evaluate):
+[92mINFO [0m:      	{'weighted_accuracy': [(1, 0.3898700433188937),
+[92mINFO [0m:      	                       (2, 0.7785738087304231),
+[92mINFO [0m:      	                       (3, 0.10513162279240253),
+[92mINFO [0m:      	                       (4, 0.10513162279240253),
+[92mINFO [0m:      	                       (5, 0.1576974341886038),
+[92mINFO [0m:      	                       (6, 0.48900366544485174),
+[92mINFO [0m:      	                       (7, 0.5416527824058647),
+[92mINFO [0m:      	                       (8, 0.49616794401866043),
+[92mINFO [0m:      	                       (9, 0.6293735421526158),
+[92mINFO [0m:      	                       (10, 0.6237087637454182)]}
+[92mINFO [0m:      	History (metrics, centralized):
+[92mINFO [0m:      	{'centralized_accuracy': [(0, 0.1125),
+[92mINFO [0m:      	                          (1, 0.3886),
+[92mINFO [0m:      	                          (2, 0.7709),
+[92mINFO [0m:      	                          (3, 0.1),
+[92mINFO [0m:      	                          (4, 0.1004),
+[92mINFO [0m:      	                          (5, 0.1509),
+[92mINFO [0m:      	                          (6, 0.4848),
+[92mINFO [0m:      	                          (7, 0.5388),
+[92mINFO [0m:      	                          (8, 0.4869),
+[92mINFO [0m:      	                          (9, 0.6242),
+[92mINFO [0m:      	                          (10, 0.6195)]}
+[92mINFO [0m:

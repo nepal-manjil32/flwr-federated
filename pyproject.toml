@@ -12,6 +12,7 @@ dependencies = [
     "flwr-datasets[vision]>=0.3.0",
     "torch==2.2.1",
     "torchvision==0.17.1",
+    "wandb",
 ]
 
 [tool.hatch.build.targets.wheel]
@@ -26,12 +27,20 @@ clientapp = "scratch_app.client_app:app"
 
 ##-- Hyperparameters --##
 [tool.flwr.app.config]
-num-server-rounds = 3
-fraction-fit = 0.5 
+num-server-rounds = 15
+fraction-fit = 0.5
 local-epochs = 1
 
 [tool.flwr.federations]
 default = "local-simulation"
 
+
 [tool.flwr.federations.local-simulation]
-options.num-supernodes = 10
+options.num-supernodes = 10 # Number of clients
+
+[tool.flwr.federations.gpu-sim]
+options.num-supernodes = 100
+options.backend.client-resources.num-cpus = 2
+options.backend.client-resources.num-gpus = 0.0
+
+

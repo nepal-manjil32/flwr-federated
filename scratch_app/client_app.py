@@ -5,13 +5,14 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 import torch
 from random import random
 from flwr.client import ClientApp, NumPyClient
-from flwr.common import Context
+from flwr.common import Context, ConfigsRecord
 from scratch_app.task import Net, get_weights, load_data, set_weights, test, train
 import json
 
 ##-- Define Flower Client and client_fn --##
 class FlowerClient(NumPyClient):
-    def __init__(self, net, trainloader, valloader, local_epochs):
+    def __init__(self, net, trainloader, valloader, local_epochs, context: Context):
+        self.client_state = context.state
         self.net = net
         self.trainloader = trainloader
         self.valloader = valloader
@@ -19,6 +20,11 @@ class FlowerClient(NumPyClient):
         self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         self.net.to(self.device)
 
+        #self.train_loss_hist = []
+
+        if "fit_metrics" not in self.client_state.configs_records:
+            self.client_state.configs_records["fit_metrics"] = ConfigsRecord()
+    
     ##-- Receives the parameters of the global model from the strategy (from sever app) --##
     def fit(self, parameters, config):
         set_weights(self.net, parameters) # applies those parameters to local model(self.net) of the client app
@@ -32,6 +38,15 @@ class FlowerClient(NumPyClient):
             lr = config["lr"], # using the lr received from the strategy through config
             device = self.device,
         )
+
+        # Making client app stateful
+        print(self.client_state)
+        fit_metrics = self.client_state.configs_records["fit_metrics"]
+        if "train_loss_hist" not in fit_metrics:
+            fit_metrics["train_loss_hist"] = [train_loss]
+        else:
+            fit_metrics["train_loss_hist"].append(train_loss)
+
 
         complex_metric = {"abc": 123, "b": random(), "mylist": [1,2,3,4]}
         #!{"train_loss": train_loss, "random_num": complex_metric} this cannot be communicated as it violates metrics data structure
@@ -61,7 +76,7 @@ def client_fn(context: Context):
     local_epochs = context.run_config["local-epochs"] # defined in pyproject.toml
 
     ##-- Return Client instance --##
-    return FlowerClient(net, trainloader, valloader, local_epochs).to_client()
+    return FlowerClient(net, trainloader, valloader, local_epochs, context).to_client()
 
 
 ##-- Flower ClientApp --##

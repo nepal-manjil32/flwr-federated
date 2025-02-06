@@ -1,0 +1,16 @@
+{"time":"2025-02-06T00:43:17.835488+05:30","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-02-06T00:43:17.835538+05:30","level":"INFO","msg":"created symlink","path":"/Users/manjilnepal/Desktop/Documents/My Codes/Machine-Learning/PyTorch/Flower/scratch-app/wandb/run-20250206_004317-5hlimit9/logs/debug-core.log"}
+{"time":"2025-02-06T00:43:17.94583+05:30","level":"INFO","msg":"created new stream","id":"5hlimit9"}
+{"time":"2025-02-06T00:43:17.945878+05:30","level":"INFO","msg":"stream: started","id":"5hlimit9"}
+{"time":"2025-02-06T00:43:17.945976+05:30","level":"INFO","msg":"handler: started","stream_id":"5hlimit9"}
+{"time":"2025-02-06T00:43:17.946142+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"5hlimit9"}
+{"time":"2025-02-06T00:43:17.946145+05:30","level":"INFO","msg":"sender: started","stream_id":"5hlimit9"}
+{"time":"2025-02-06T00:43:18.388916+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-06T00:44:20.217928+05:30","level":"INFO","msg":"stream: closing","id":"5hlimit9"}
+{"time":"2025-02-06T00:44:20.21807+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-06T00:44:20.221352+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-06T00:44:21.497269+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-06T00:44:22.008953+05:30","level":"INFO","msg":"handler: closed","stream_id":"5hlimit9"}
+{"time":"2025-02-06T00:44:22.00898+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"5hlimit9"}
+{"time":"2025-02-06T00:44:22.009071+05:30","level":"INFO","msg":"sender: closed","stream_id":"5hlimit9"}
+{"time":"2025-02-06T00:44:22.009418+05:30","level":"INFO","msg":"stream: closed","id":"5hlimit9"}

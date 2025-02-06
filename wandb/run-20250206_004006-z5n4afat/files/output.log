@@ -1,0 +1,70 @@
+[92mINFO [0m:      Starting Flower ServerApp, config: num_rounds=3, no round_timeout
+[92mINFO [0m:
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Using initial global parameters provided by strategy
+[92mINFO [0m:      Starting evaluation of initial global parameters
+[92mINFO [0m:      initial parameters (loss, other metrics): 2.3047037825416834, {'centralized_accuracy': 0.0985}
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[33m(raylet)[0m [2025-02-06 00:40:09,000 E 76826 1964948] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-02-06_00-39-58_065554_76808 is over 95% full, available space: 10.4001 GB; capacity: 228.274 GB. Object creation will fail if spilling is required.
+[33m(raylet)[0m [2025-02-06 00:40:19,005 E 76826 1964948] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-02-06_00-39-58_065554_76808 is over 95% full, available space: 10.3942 GB; capacity: 228.274 GB. Object creation will fail if spilling is required.
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.654908136967527, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.8525656177075025, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.19357831771895584, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.05836155558148448, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.043598446566888605, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (1, 2.064560972082729, {'centralized_accuracy': 0.2509}, 14.10590991700883)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.17062636912629492, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7972229153276804, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.872090537386355, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.09114027248632339, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.0028070718967386776, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (2, 0.6640359712675357, {'centralized_accuracy': 0.7586}, 19.545472541998606)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[33m(raylet)[0m [2025-02-06 00:40:29,031 E 76826 1964948] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2025-02-06_00-39-58_065554_76808 is over 95% full, available space: 10.3853 GB; capacity: 228.274 GB. Object creation will fail if spilling is required.
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 5 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 5 results and 0 failures
+{"abc": 123, "b": 0.705116397872018, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7682649546062112, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.7115770158271023, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.20579611292807864, "mylist": [1, 2, 3, 4]}
+{"abc": 123, "b": 0.025220040646844355, "mylist": [1, 2, 3, 4]}
+[92mINFO [0m:      fit progress: (3, 2.278644616230608, {'centralized_accuracy': 0.1207}, 25.5440657500003)
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 3 round(s) in 26.47s
+[92mINFO [0m:      	History (loss, distributed):
+[92mINFO [0m:      		round 1: 2.0628313389316193
+[92mINFO [0m:      		round 2: 0.6519944195493352
+[92mINFO [0m:      		round 3: 2.270886907441867
+[92mINFO [0m:      	History (loss, centralized):
+[92mINFO [0m:      		round 0: 2.3047037825416834
+[92mINFO [0m:      		round 1: 2.064560972082729
+[92mINFO [0m:      		round 2: 0.6640359712675357
+[92mINFO [0m:      		round 3: 2.278644616230608
+[92mINFO [0m:      	History (metrics, distributed, fit):
+[92mINFO [0m:      	{'max_b': [(1, 0.8525656177075025),
+[92mINFO [0m:      	           (2, 0.872090537386355),
+[92mINFO [0m:      	           (3, 0.7682649546062112)]}
+[92mINFO [0m:      	History (metrics, distributed, evaluate):
+[92mINFO [0m:      	{'weighted_accuracy': [(1, 0.2507497500833056),
+[92mINFO [0m:      	                       (2, 0.7667444185271576),
+[92mINFO [0m:      	                       (3, 0.12545818060646452)]}
+[92mINFO [0m:      	History (metrics, centralized):
+[92mINFO [0m:      	{'centralized_accuracy': [(0, 0.0985), (1, 0.2509), (2, 0.7586), (3, 0.1207)]}
+[92mINFO [0m:
+[36m(ClientAppActor pid=76841)[0m [93mWARNING [0m:   Manually terminating ClientAppActor
+[36m(ClientAppActor pid=76839)[0m [93mWARNING [0m:   Manually terminating ClientAppActor[32m [repeated 3x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m

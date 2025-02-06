@@ -11,6 +11,7 @@ from datasets import load_dataset
 from torch.utils.data import DataLoader
 from random import random
 import json
+from scratch_app.my_strategy import CustomFedAvg
 
 ##-- Callback(function) to perform centralized evaluation of our model --##
  # called each time our global model is updated
