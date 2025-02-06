@@ -1,0 +1,11 @@
+##-- Useful Commands For Running a Flower App --##
+
+1. flwr run [OPTIONS] [APP] [FEDERATIONS]
+
+- app [APP] -> path of the flower pp to run (default: .)
+- federation [FEDERATION] -> name of the federation to run the app on. [default: None]
+
+2. DEFAULT: flwr run . -> run the flower app
+
+3. watch -n 1 nvidia-smi -> keeps updating nvidia-smi every 1 second
+
