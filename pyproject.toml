@@ -46,7 +46,7 @@ options.backend.client-resources.num-cpus = 1
 # GPU setup
 [tool.flwr.federations.gpu-sim]
 options.num-supernodes = 100
-options.backend.client-resources.num-cpus = 1
-options.backend.client-resources.num-gpus = 0.0
+options.backend.client-resources.num-cpus = 1 # CPU Cores
+options.backend.client-resources.num-gpus = 0.0 # VRAM %
 
 

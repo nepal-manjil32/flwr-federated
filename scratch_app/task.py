@@ -13,6 +13,7 @@ from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, Normalize, ToTensor
 
 
+##-- CNN as the base model for each client --##
 class Net(nn.Module):
     """Model (simple CNN adapted from 'PyTorch: A 60 Minute Blitz')"""
 
@@ -36,8 +37,8 @@ class Net(nn.Module):
 
 ##-- Transforms function --##
 def get_transforms():
-    pytorch_transforms = Compose(
-        [ToTensor(), Normalize((0.5), (0.5))]
+    pytorch_transforms = Compose([ToTensor(), 
+                                  Normalize((0.5), (0.5))]
     )
 
     def apply_transforms(batch):
